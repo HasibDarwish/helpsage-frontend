@@ -1,0 +1,109 @@
+/* website header , background */
+.headerColor {
+	color: #e4e4e4;
+	background-color: #ececec;
+	color: #313131;
+}
+
+/* modal header footer, background */
+.headerColor {
+	color: #e8e8e8;
+	background-color: #f3f3f3;
+}
+
+/* card or button, hover */
+.buttonColor {
+	color: #f4f4f4;
+	background-color: #f9f9f9;
+}
+
+
+
+
+body{
+	background-color: #ececec;
+	font-family: sans-serif;
+    font-size: 16px;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+
+body::-webkit-scrollbar-track {
+  background: #e4e4e4; 
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background: #ff4500; 
+}
+
+.cards{
+	background-color: #f4f4f4;
+	color: #313131;
+}
+
+
+.modal-content {
+	background-color: #eee;
+}
+
+.modalHeaderFooter {
+	width: 100%;
+	height: 100%;
+	background-color: #e8e8e8;
+	color: #2d3035;
+}
+
+.modalButtons {
+	background-color: #f8f8f8;
+	color: #313131;
+	text-align: center;
+
+	border: none;
+	box-shadow: inset 0 0 #ff4500;
+	transition: ease 0.3s;
+	cursor: pointer;
+}
+
+.modalButtons:hover {
+	border-radius: 5px !important;
+	box-shadow: inset 0 35px hsl(16, 100%, 50%,0.2);
+}
+
+input,
+select {
+	background-color: #f9f9f9;
+	border: 1px solid black !important;
+	border-radius: 0px !important;
+	color: #2d3035;
+}
+input:focus,
+label {
+	color: #2d3035;
+}
+
+input::placeholder {
+	color: hsl(16, 100%, 50%, 0.5);
+}
+
+.form-check-input:checked {
+	background-color: #ff4500 !important;
+	border-color: #ff4500 !important;
+}
+
+
+.form-label {
+	margin-bottom: 0px !important;
+}
+
+.loginIcons {
+	background-color: #f5f5f5;
+	transition: ease 0.3s;
+	box-shadow: inset 0 0 orangered;
+}
+
+.loginIcons:hover {
+	box-shadow: inset 0 -80px hsl(16, 100%, 50%,0.2);
+}

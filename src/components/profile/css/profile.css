@@ -1,0 +1,59 @@
+/* this section is reserved for styling the profile section in the leftside of the page */
+
+.cardShadow {
+	box-shadow: 0 2px 3px 0 rgb(0 0 0 / 5%), 0 2px 3px 0 rgb(0 0 0 / 5%);
+}
+
+.profileImage {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 5px solid #ececec;
+}
+
+.profileImage:hover{
+	border: 5px solid orangered;
+}
+
+
+.leftSideProfile {
+	height: 80vh;
+}
+
+
+/*  this section is reserved for styling the posting section of the profile page*/
+.textArea {
+	width: 100%;
+	height: 70px;
+	outline:0px;
+	background-color: #fbfbfb;
+	color: #2d3035;
+}
+
+.imageUploadBtn {
+	opacity: 0;
+	z-index: -1;
+	position: absolute;
+	left: 0;
+}
+
+.postItemFormButtons {
+	background-color: #d9d9d9;
+    color: #313131;
+	border: none;
+	box-shadow: inset 0 0 #ff4500;
+	transition: ease 0.3s;
+}
+
+.postItemFormButtons:hover {
+	box-shadow: inset 0 40px hsl(16, 100%, 50%,0.1);
+}
+
+/* this section is reserved for styling the list of available items */
+
+.postOwnerProfileImg {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}

@@ -1,0 +1,33 @@
+.loaderHolder {
+	display: relative;
+	z-index: 1100 !important;
+}
+
+.customLoader {
+	width: 150px;
+	height: 150px;
+	position: fixed;
+	top: 40%;
+	left: 45%;
+
+	border-width: 30px;
+	border-color: #ff4500 #bebebe black green;
+	border-radius: 50%;
+	border-style: dotted;
+	animation: load 0.4s linear infinite;
+	z-index: 1101 !important;
+}
+
+@keyframes load {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		border-style: dashed;
+	}
+
+	100% {
+		transform: rotate(360deg);
+		border-style: double;
+	}
+}

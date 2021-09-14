@@ -1,0 +1,47 @@
+.sideBar {
+	position: sticky;
+	top: 60px !important;
+	left: 0px !important;
+	height: 90vh;
+}
+.sideBarWidth{
+	width:150px;
+}
+
+.sideBarDiv {
+	overflow: auto;
+}
+
+.sideBarDiv::-webkit-scrollbar {
+  width: 3px;
+}
+
+
+.sideBarDiv::-webkit-scrollbar-track {
+  background: #f2f2f2; 
+}
+ 
+.sideBarDiv::-webkit-scrollbar-thumb {
+  background: #ff4500; 
+}
+
+
+.sideBarProfileImage {
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	border-right: 5px solid orangered;
+	border-top: 1px solid orangered;
+	border-bottom: 1px solid orangered;
+}
+
+.sideBarProfileSec {
+	z-index: 1070;
+	background-color: #f2f2f2;
+	color: #313131;
+}
+.sideBarProfileSec:hover{
+	background-color: hsl(16, 100%, 50%,0.1);
+}
+
+

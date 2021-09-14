@@ -1,0 +1,11 @@
+.notification {
+	position: fixed;
+	top: 7px;
+	right: 7px;
+	width: auto;
+	height: 120px;
+	border: none;
+	color: #313131;
+	background-color: white;
+	z-index: 10002;
+}

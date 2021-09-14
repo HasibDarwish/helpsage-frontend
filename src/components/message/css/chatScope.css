@@ -1,0 +1,84 @@
+
+div.cs-main-container {
+	height: 90vh;
+}
+
+.cs-main-container div.cs-conversation-header,
+div.cs-conversation-header__content .cs-conversation-header__info,
+div.cs-conversation-header__content .cs-conversation-header__user-name,
+section.cs-conversation-header__actions
+	div.cs-typing-indicator
+	div.cs-typing-indicator__text {
+	background-color: #f2f2f2;
+	color: #313131;
+}
+div.cs-typing-indicator
+	div.cs-typing-indicator__indicator
+	div.cs-typing-indicator__dot,
+div.cs-message-separator::before,
+div.cs-message-separator::after {
+	background-color: #313131;
+}
+
+div.cs-message-separator {
+	color: #313131;
+}
+
+
+section.cs-message.cs-message--outgoing.cs-message--single
+	div.cs-message__content-wrapper
+	div.cs-message__content {
+	background-color:hsl(16, 100%, 50%,0.1);
+}
+
+section.cs-message.cs-message--incoming.cs-message--single
+div.cs-message__content-wrapper
+div.cs-message__content {
+	background-color: hsl(0, 0%, 85%,0.3);
+}
+
+div.cs-main-container {
+	border: 1px solid #f2f2f2;
+}
+
+div.cs-message-input
+	.cs-message-input__tools
+	.cs-button.cs-button--attachment
+	.svg-inline--fa.fa-paperclip.fa-w-14,
+div.cs-message-input .cs-message-input__tools,
+div.cs-message-input__tools button.cs-button.cs-button--send {
+	background-color: #dee2e6;
+	color: #313131;
+	border: none;
+}
+div.cs-message-input div.cs-message-input__content-editor-wrapper {
+    border-radius: 0px;
+}
+div.cs-chat-container div.cs-message-input {
+    padding: 0px;
+}
+
+div.cs-message-input div.cs-message-input__content-editor-wrapper,
+div.scrollbar-container.cs-message-input__content-editor-container.ps
+div.cs-message-input__content-editor {
+    background-color: #e0e4e9;
+}
+
+.userListMessage{
+    background-color: #f4f4f4;
+    border-radius: 5px; 
+}
+div.cs-conversation.m-1.userListMessage:hover,
+div.cs-conversation.m-1.userListMessage:active{
+    background-color: hsl(16, 100%, 50%,0.1);
+}
+
+.activechat{
+	background-color:hsl(16, 100%, 50%,0.1) !important;
+}
+
+.messageImage{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
