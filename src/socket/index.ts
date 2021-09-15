@@ -9,6 +9,3 @@ export const socket = io(BASE_URL!, {
 		"my-custom-header": "abcd",
 	},
 });
-// socket.on("message", (message) => {
-//     console.log(message)
-// })

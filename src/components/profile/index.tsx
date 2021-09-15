@@ -3,7 +3,8 @@ import {Col, Container, Row} from "react-bootstrap";
 import PersonalInfoSec from "./personalInfoSec";
 import ItemPostSec from "../newsFeed/postItem";
 import SingleItem from "../newsFeed/singleItem";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
+import {socket} from "../../socket"
 
 import {ReduxState} from "../../store/@types";
 import Loader from "../loader";
@@ -22,6 +23,13 @@ class Profile extends Component<ProfileProps, ProfileState> {
 	state = {
 		generateChatModal: false,
 	};
+
+	componentDidMount() {
+		socket.on("connect", () => {
+			console.log(socket.id);
+			this.props.user?.chats.map((chat) => socket.emit("joinRoom", chat._id));
+		});
+	}
 
 	render() {
 		return (

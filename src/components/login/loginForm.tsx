@@ -33,7 +33,6 @@ interface loginFormState {
 	password: string;
 }
 
-
 class LoginForm extends Component<LoginFormProps, loginFormState> {
 	state = {
 		email: "",
@@ -75,7 +74,7 @@ class LoginForm extends Component<LoginFormProps, loginFormState> {
 						<Container>
 							<Row>
 								<div className="col mx-1 mb-1 mb-sm-0 btn loginIcons">
-									<a href="http://localhost:3001/googlelogin">
+									<a href="https://helpsage.herokuapp.com/googlelogin">
 										<FcGoogle
 											size={60}
 											onClick={() =>
@@ -87,7 +86,7 @@ class LoginForm extends Component<LoginFormProps, loginFormState> {
 									</a>
 								</div>
 								<div className="col mx-1 mb-1 mb-sm-0 btn  loginIcons">
-									<a href="http://localhost:3001/githublogin">
+									<a href="https://helpsage.herokuapp.com/githublogin">
 										<VscGithub size={60} />
 									</a>
 								</div>
