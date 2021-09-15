@@ -3,8 +3,8 @@ import {Modal} from "react-bootstrap";
 import {connect} from "react-redux";
 import {axiosAgent} from "../../api";
 import Notification from "../alert";
-import { withRouter } from "react-router-dom"
-import {RouteComponentProps} from "react-router-dom"
+import {withRouter} from "react-router-dom";
+import {RouteComponentProps} from "react-router-dom";
 
 import {ReduxState, Item} from "../../store/@types";
 import {ThunkDispatch} from "redux-thunk";
@@ -12,9 +12,8 @@ import {Action} from "redux";
 import {latestProfile} from "../../store/actions/user";
 import {latestChats} from "../../store/actions/chat";
 import {loader} from "../../store/actions/loader";
-import { socket } from "../../socket";
+import {socket} from "../../socket";
 import "animate.css";
-
 
 const mapStateToProps = (state: ReduxState) => state;
 const mapDispatchToProps = (dispatch: ThunkDispatch<Action, any, any>) => ({
@@ -42,7 +41,6 @@ interface GenerateChatState {
 	notification: boolean;
 }
 
-
 class GenerateChat extends Component<GenerateChatProps, GenerateChatState> {
 	state = {
 		newChat: {
@@ -60,31 +58,31 @@ class GenerateChat extends Component<GenerateChatProps, GenerateChatState> {
 		notification: false,
 	};
 	handleGeneratingChat = async () => {
-		this.props.setLoaderStatus(true)
+		this.props.setLoaderStatus(true);
 		try {
 			const request = await axiosAgent.post("chat", this.state.newChat);
-			socket.emit("joinRoom", request.data._id)
+			socket.emit("joinRoom", request.data._id);
 			this.setState({ReqSuccess: true});
 			this.setState({notification: true});
 			this.props.setChatModal();
 			this.props.latestChats();
 			setTimeout(() => {
-				this.props.history.push("/message")
+				this.props.history.push("/message");
 				this.setState({ReqSuccess: null});
 				this.setState({notification: false});
-				this.props.setLoaderStatus(false)
+				this.props.setLoaderStatus(false);
 			}, 500);
 		} catch (error) {
 			console.log(error);
 			this.setState({ReqSuccess: false});
 			this.setState({notification: true});
 			this.props.setChatModal();
-			
+
 			setTimeout(() => {
-				this.props.history.push("/message")
+				this.props.history.push("/message");
 				this.setState({ReqSuccess: null});
 				this.setState({notification: false});
-				this.props.setLoaderStatus(false)
+				this.props.setLoaderStatus(false);
 			}, 500);
 		}
 	};
@@ -128,7 +126,7 @@ class GenerateChat extends Component<GenerateChatProps, GenerateChatState> {
 									onClick={() => this.handleGeneratingChat()}
 									className="mt-3 btn postItemFormButtons"
 								>
-									<a href="/message">Proceed</a>
+									Proceed
 								</button>
 							</div>
 						</Modal.Body>
@@ -140,4 +138,6 @@ class GenerateChat extends Component<GenerateChatProps, GenerateChatState> {
 	}
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(GenerateChat))
+export default withRouter(
+	connect(mapStateToProps, mapDispatchToProps)(GenerateChat)
+);
