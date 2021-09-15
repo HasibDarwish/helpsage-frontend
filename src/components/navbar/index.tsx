@@ -40,6 +40,10 @@ class Navigationbar extends Component<NavigationbarProps, NavigationbarState> {
 			this.setState({windowSize: window.innerWidth});
 		});
 	}
+	handleChats = async() => {
+		await this.props.latestChats();
+		await window.location.reload();
+	}
 
 	render() {
 		return (
@@ -68,14 +72,14 @@ class Navigationbar extends Component<NavigationbarProps, NavigationbarState> {
 											className=" btn navIcons"
 										/>
 									</Link>
-									<Nav.Link href="/message" className="my-0 py-0">
+									<Link to="/message" className="my-0 py-0">
 										<TiMessages
-											onClick={() => this.props.latestChats()}
+											onClick={this.handleChats}
 											size={60}
 											title="Message"
 											className=" btn navIcons"
 										/>
-									</Nav.Link>
+									</Link>
 
 									<Nav.Link className="my-1 py-0">
 										<ProfileImage />
@@ -97,16 +101,14 @@ class Navigationbar extends Component<NavigationbarProps, NavigationbarState> {
 											</Link>
 										</Col>
 										<Col xs={4}>
-											<Nav.Link
-												href="/message"
-												onClick={() => this.props.latestChats()}
-											>
+											<Link to="/message">
 												<TiMessages
+													onClick={this.handleChats}
 													size={60}
 													title="Message"
 													className=" btn navIcons"
 												/>
-											</Nav.Link>
+											</Link>
 										</Col>
 
 										<Col xs={4}>
