@@ -4,7 +4,6 @@ import PersonalInfoSec from "./personalInfoSec";
 import ItemPostSec from "../newsFeed/postItem";
 import SingleItem from "../newsFeed/singleItem";
 import {connect} from "react-redux";
-import {socket} from "../../socket";
 
 import {ReduxState} from "../../store/@types";
 import Loader from "../loader";
