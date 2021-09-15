@@ -85,7 +85,7 @@ class LoginForm extends Component<LoginFormProps, loginFormState> {
 										/>
 									</a>
 								</div>
-								<div className="col mx-1 mb-1 mb-sm-0 btn  loginIcons">
+								<div className="col mx-1 mb-1 mb-sm-0 btn loginIcons">
 									<a href="https://helpsage.herokuapp.com/githublogin">
 										<VscGithub size={60} />
 									</a>
