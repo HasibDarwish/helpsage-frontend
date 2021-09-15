@@ -97,9 +97,11 @@ class Navigationbar extends Component<NavigationbarProps, NavigationbarState> {
 											</Link>
 										</Col>
 										<Col xs={4}>
-											<Nav.Link href="/message">
+											<Nav.Link
+												href="/message"
+												onClick={() => this.props.latestChats()}
+											>
 												<TiMessages
-													onClick={() => this.props.latestChats()}
 													size={60}
 													title="Message"
 													className=" btn navIcons"
