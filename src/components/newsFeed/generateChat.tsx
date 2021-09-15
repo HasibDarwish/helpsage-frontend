@@ -128,7 +128,7 @@ class GenerateChat extends Component<GenerateChatProps, GenerateChatState> {
 									onClick={() => this.handleGeneratingChat()}
 									className="mt-3 btn postItemFormButtons"
 								>
-									Proceed
+									<a href="/message">Proceed</a>
 								</button>
 							</div>
 						</Modal.Body>

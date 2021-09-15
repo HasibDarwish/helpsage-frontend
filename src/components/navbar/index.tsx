@@ -68,14 +68,14 @@ class Navigationbar extends Component<NavigationbarProps, NavigationbarState> {
 											className=" btn navIcons"
 										/>
 									</Link>
-									<Link to="/message" className="my-0 py-0">
+									<Nav.Link href="/message" className="my-0 py-0">
 										<TiMessages
 											onClick={() => this.props.latestChats()}
 											size={60}
 											title="Message"
 											className=" btn navIcons"
 										/>
-									</Link>
+									</Nav.Link>
 
 									<Nav.Link className="my-1 py-0">
 										<ProfileImage />
@@ -97,14 +97,14 @@ class Navigationbar extends Component<NavigationbarProps, NavigationbarState> {
 											</Link>
 										</Col>
 										<Col xs={4}>
-											<Link to="/message">
+											<Nav.Link href="/message">
 												<TiMessages
 													onClick={() => this.props.latestChats()}
 													size={60}
 													title="Message"
 													className=" btn navIcons"
 												/>
-											</Link>
+											</Nav.Link>
 										</Col>
 
 										<Col xs={4}>
