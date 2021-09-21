@@ -31,7 +31,11 @@ In this page, you can see all the available products on the helpsage platform in
 <img src="https://res.cloudinary.com/dnalxylc8/image/upload/v1632227276/npfsiazkdrrxwn01ln3r.png" alt="newsfeed" />
 
 ## Message
-This page gives you ability to message with other users in real time regarding a specific product that you are interested or they are interested that you offer and published on the helpsage platform. The follwing image shows the message page.
+This page gives you the ability to chat with other users in real time regarding a specific product that you are interested in or they are interested in a product that you offer and published on the helpsage platform. It is made up of two main sections: users and message.
+#### Users:
+This section displays the list of users that you have started chatting with them regarding a product.
+#### Message:
+This section allows you to send and receive message regarding a specific product. To see the messages that you exchanged with a user, click on that user from the users list and all your messages are going to appear. The follwing image shows the message page.
 
 <img src="https://res.cloudinary.com/dnalxylc8/image/upload/v1632227604/xketgf4hzatfr08w0ffn.png" alt="messages" />
 
