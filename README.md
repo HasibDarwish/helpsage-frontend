@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# helpsage
+The primary goal of this project is to help the climate change and make the world a better place for the current and upcomming generations. As you know, every year, lots of products go to landfills and this is not good for the environment becuase landfills produce various type fatel gases and chemicals. To solve this probnlem, helpsage allows you to connect with different networks in your community and give a second life to used products.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies
+#### Frontend: 
+React, Typescript, Bootstrap, React-Bootstrap, Redux, Redux-persist, Socketio, etc... 
+#### Backend:
+Nodejs, Typescript, Express, MongoDB, Jsonwebtoken, etc...
 
-## Available Scripts
+## Login
+As you can see below, you are presented with three options: you can use your google account or github account login or you can register for a new account using your email address. Once you are registered for a new account, type in your crendentials and click on the "Login" button to login. once you logged in, you will be moved to profile page.
 
-In the project directory, you can run:
+<img src="https://res.cloudinary.com/dnalxylc8/image/upload/v1632225166/gr5ehzjmhxada2cwszyg.gif" alt="login"/>
 
-### `npm start`
+## Profile
+This page is made of three sections: navbar, profile, posting item and display of items the user posted on the platform.
+#### Navbar: 
+Through section you will be able to navigate around the website and also update your personal information by clicking on your profile image on the right top corner and selecting "Edit Profile" from the list. Once you selected the "Edit Profile", a modal will a appear where you can update your info and click on the "Update" button.
+#### Profile:
+In this section, you can see your personal info like your name and location and also you can update your profile picture.
+#### Post Item:
+As its name suggests, this section gives you the ability to post your own item on the platform and make a difference to someone life. To post item, describe your item; select updato two of its pictures; click on the "Post" button; that is it.
+#### Display of user Items:
+This section displays the items you posted on the helpsage platform. Each item has three dots on its top right corner where you can click and see the available options like updating, deleting or changing its status from being available to donated.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img src="https://res.cloudinary.com/dnalxylc8/image/upload/v1632225764/trfflv2hvarqzf7pv5o1.png" alt="profile" />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## News Feed
+In this page, you can see all the available products on the helpsage platform including the products you posted. Once you are interested in a product, click on "Needit" button and then on "Proceed" button to contact the user who published that specific product. The following is an illustration of the news feed page.
 
-### `npm test`
+<img src="https://res.cloudinary.com/dnalxylc8/image/upload/v1632227276/npfsiazkdrrxwn01ln3r.png" alt="newsfeed" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Message
+This page gives you ability to message with other users in real time regarding a specific product that you are interested or they are interested that you offer and published on the helpsage platform. The follwing image shows the message page.
 
-### `npm run build`
+<img src="https://res.cloudinary.com/dnalxylc8/image/upload/v1632227604/xketgf4hzatfr08w0ffn.png" alt="messages" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
